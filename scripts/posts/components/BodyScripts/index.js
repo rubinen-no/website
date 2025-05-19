@@ -1,7 +1,7 @@
 const html = String.raw;
 
 export const BodyScripts = () => {
-  return html` <script src="/js/main.js"></script>
+  return html` <script src="js/main.js"></script>
     <script>
 
           const yearsAgoElements = document.querySelectorAll('.years-ago');
