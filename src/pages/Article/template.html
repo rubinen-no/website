@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-GB" class="article">
+  <head>
+    <title>
+      {{TITLE}} | rubinen.no | Det beste av alt: vi bygger vennskap! Nå også
+      mulig å logge på med bedrock!
+    </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Language" content="en" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="application-name" content="rubinen.no" />
+
+    <meta name="description" content="{{DESCRIPTION}}" />
+    <meta name="author" content="rubinen.no" />
+
+    <meta property="article:author" content="rubinen.no" />
+
+    {{OPEN_GRAPH}} {{GLOBAL_CSS}} {{ARTICLE_CSS}} {{HEAD_SCRIPTS}}
+  </head>
+  <body>
+    <div class="app" id="app">
+      {{PAGE_SECTION_HEADER}}
+      <main>
+        <section class="section">
+          <div class="container">
+            {{BREADCRUMBS}}
+            <h1>{{TITLE}}{{TAGLINE}}</h1>
+            {{POST_META}}
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">{{CONTENT}}</div>
+        </section>
+      </main>
+      {{PAGE_SECTION_FOOTER}}
+    </div>
+
+    {{BODY_SCRIPTS}}
+  </body>
+</html>

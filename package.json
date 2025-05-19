@@ -1,0 +1,59 @@
+{
+  "name": "phun-ky.github.io",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Website",
+  "main": "index.html",
+  "scripts": {
+    "clean": "rm -rf dist/*",
+    "assets": "mkdir -p dist && cp -a ./src/assets/. ./dist/",
+    "prebuild": "npm run clean && npm run assets && node scripts/posts/om-oss.js && node scripts/posts/create.js && node scripts/posts/index.js && node scripts/posts/categories.js && node scripts/posts/404.js",
+    "build": "rollup -c rollup.config.js",
+    "postbuild": "bash -c 'mv -f ./dist/*.{js,map} ./dist/js'",
+    "build:watch": "NODE_ENV=development rollup -c rollup.config.js -w",
+    "commit": "git cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubinen-no/website.git"
+  },
+  "author": "rubinen.no",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rubinen-no/website/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/git-cz"
+    }
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.8.2"
+  },
+  "homepage": "https://github.com/rubinen-no/website#readme",
+  "devDependencies": {
+    "@markdoc/markdoc": "^0.5.2",
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "cssnano": "^7.0.7",
+    "eslint": "^9.27.0",
+    "eslint-config-phun-ky": "^1.0.1",
+    "git-cz": "^4.9.0",
+    "glob": "^11.0.2",
+    "htmlparser2": "^10.0.0",
+    "js-yaml": "^4.1.0",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.0",
+    "prettier": "^3.5.3",
+    "rollup": "^4.41.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-svg-import": "^3.0.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.8.3"
+  }
+}

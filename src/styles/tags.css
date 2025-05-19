@@ -1,0 +1,133 @@
+body ::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+  color: white;
+  font-size: 1rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-image: linear-gradient(
+    90deg,
+    rgba(146, 25, 70, 1) 50%,
+    rgba(22, 160, 133, 1) 50%
+  );
+}
+
+html {
+  scrollbar-width: none;
+  scroll-behavior: initial;
+}
+
+body {
+  font-size: var(--size-font);
+  line-height: 1;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  -ms-overflow-style: none;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 7.5em;
+  font-weight: 500;
+  line-height: 1;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 5em;
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.5em;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.75em;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 1.25em;
+  margin-top: 1.25em;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
+  max-width: 65ch;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 600;
+}
+
+pre.tfso {
+  white-space: pre-wrap;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family:
+    'Menlo for Powerline', 'Menlo Regular for Powerline', 'DejaVu Sans Mono',
+    Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
+}
+
+main {
+  padding-bottom: calc(var(--footer-height) + var(--section-padding));
+
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  flex-grow: 1;
+}
+
+section {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
