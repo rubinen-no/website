@@ -9,7 +9,7 @@ export const GlobalCSS = () => {
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/css/rubinen.css" />
+    <link rel="stylesheet" href="css/rubinen.css" />
     <!-- global css -->
     <style type="text/css"></style>
   `;
